@@ -17,6 +17,8 @@
 	-moz-box-sizing: 20px;
 }
 
+/* TRANSPARENCIA - TRANSPARENCIA - TRANSPARENCIA - TRANSPARENCIA - TRANSPARENCIA -   */
+
 #transparencia{ 
 	width: 300px;
 	height: 300px;
@@ -28,9 +30,147 @@
 	border-bottom: 2px solid #FFF;
 }
 
+ /* DEGRADE - DEGRADE -DEGRADE -DEGRADE -DEGRADE -DEGRADE -  */
+
 #degrade{ 
 	width: 300px;
 	height: 300px;
 	/*background: linear-gradient(to top, red, yellow);*/
 	background: radial-gradient(green, red, yellow);
+}
+
+/* SOMBRAS  - SOMBRAS  - SOMBRAS  - SOMBRAS  - SOMBRAS  - SOMBRAS  */
+
+#sombra{
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+}
+
+#sombra h1{
+	color: white;
+	font-size: 30px;
+	text-shadow: 0px 10px black;
+}
+
+#sombra h2{
+	color: white;
+	font-size: 30px;
+	text-shadow: 0px 10px 10px black;
+}
+
+#sombra p{
+	color: white;
+	font-size: 30px;
+    text-shadow: 0 0 3px #FF0000, 0 0 10px #0000FF;
+}
+
+#sombra h3{
+	color: white;
+	font-size: 40px;
+    text-shadow: 4px 4px black;
+}
+
+#box {
+	width: 100px;
+	height:100px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	box-shadow: 10px 10px black;
+}
+
+#box2 {
+	width: 100px;
+	height:100px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	box-shadow: -10px 10px 10px red;
+}
+
+#box3 {
+	width: 100px;
+	height:100px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+
+#box4 {
+	width: 100px;
+	height:100px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+ 	box-shadow: -5px 5px 8px blue, -10px 10px 8px red, -15px 15px 8px green;
+}
+
+#box5 {
+	width: 100px;
+	height:100px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	box-shadow: -5px 10px 18px #888888;
+}
+
+/* ANIMAÇÃO - ANIMAÇÃO - ANIMAÇÃO - ANIMAÇÃO - ANIMAÇÃO - */
+
+
+@keyframes animacao-box{
+	from {
+			background: red;
+			border-radius: 0px;
+			top: 0px;
+			left: 0px
+		 }
+	
+	to   {
+		 	background: blue;
+		 	border-radius: 300px;
+		 	top: 200px;
+			left: 200px
+		 }
+}
+
+
+#box-animacao{
+	width: 300px;
+	height: 300px;
+	background: red;
+	animation-name: animacao-box;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+}
+
+/* TRANSIÇÃO - TRANSIÇÃO - TRANSIÇÃO - TRANSIÇÃO - TRANSIÇÃO - */
+#box-transicao{
+	width: 300px;
+	height: 300px;
+	background: orange; 	
+}
+
+#box-transicao:hover{
+	width: 400px;
+	background: black;
+
+}
+
+
+#box-transicao2{
+	width: 300px;
+	height: 300px;
+	background: orange; 	
+}
+
+#box-transicao2:hover{
+	width: 400px;
+	background: black;
+	transition: background 3s, width 8s;
 }
